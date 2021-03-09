@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alfa+Slab+One&family=Fredoka+One&family=Overpass:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scrollbar-base-color: red;
+    
+    
+        /* outline: 1px solid red; */
+    
+}
+
+
+.hero{
+    display:flex;
+    flex-direction: column;
+  
+    height:100vh;
+    width:100vw;
+    background:url(./img/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 1000;
+   
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height:10vh;
+    width:100vw;
+    color:white;
+    box-shadow: 5px 5px 10px rgba(77, 74, 74, 0.733);
+    padding:0px 10vw;
+
+}
+.navbar >h1{
+    font-family: 'Fredoka One', cursive;
+    font-weight:bold;
+    font-size:2.5em;
+}
+
+.navbar::before{
+    content:"";
+    height:100vh;
+    width:100vw;
+    position:absolute;  
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .5;
+    z-index:-1;
+
+}
+.navbar >a{
+    color:white;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color:rgba(250, 6, 250, 0.493);
+    text-decoration:none;
+    padding:10px 25px;
+    font-family: 'Abel', sans-serif;
+    font-size:1em;
+    box-shadow: 2px 2px 5px rgba(250, 6, 250, 0.411);
+  
+}
+
+ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+li{
+    list-style:none;
+    padding:10px 0vw;
+}
+
+li>a{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.5rem;
+    text-decoration: none;
+    text-transform:uppercase;
+    color:white;
+    padding:0px 4vw;
+    font-weight: bold;
+}
+li:hover{
+    background-color:white;
+    /* border-radius:10px; */
+
+    color:black;
+}
+
+li:hover a{
+    color:black;
+    text-decoration:underline;
+}
+
+.hemberg{
+    display:none;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:90vh;
+    color:white;
+}
+
+.content{
+    position: absolute;
+    left:10vw;
+    top:30%;
+    text-align: left;
+}
+.content > h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 9vw;
+    color:transparent;
+    -webkit-text-stroke:.5vw rgb(0, 255, 255);
+    letter-spacing:2vw;
+    
+}
+.content > p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2.5vw; 
+    font-weight:bold;
+    letter-spacing:.3vw;
+    margin-bottom:3vh;
+    width:40vw;
+
+}
+
+
+.links{
+    display:flex;
+    flex-direction:row;
+    position: absolute;
+    right:5vw;
+     top:90%; 
+    
+}
+
+
+.links > a{
+    padding:0px 1vh;
+    transform: translatey(0vw);
+    transition:1s;
+    opacity:.7;
+ 
+ 
+}
+
+.dot{
+    border:2px solid white;
+    border-radius:30px;
+    height:2vw;
+    width:2vw;
+    margin:1vw;
+ 
+    
+}
+.changer{
+    display:flex;
+    flex-direction:row;
+    position: absolute;
+    bottom:3vh;
+}
+
+img{
+    height:5vh;
+    width:5vh;
+    transform: translateX(0vw);
+    /* transform: rotate(0deg); */
+    transition:1s;
+}
+
+.links>a:hover{
+
+    transform: translateY(-1vw);
+    /* transform: rotate(360deg); */
+    transition:1s;
+    opacity:1;
+
+}
+.content>a{
+    text-transform:uppercase;
+    text-decoration: none;
+    padding:1vw 5vw;
+    color:white;
+    position:absolute;
+    left:12vw;
+    border:2px solid rgb(0,255,255);
+    border-radius:5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size:24px;
+    
+    
+}
+
+.content>a:hover{
+    background-color:rgb(0, 255, 255);
+    color:black;
+    
+}
+
+
+#about{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:90vh;
+    width:100vw;
+    background:url(./img/back4.jpg);
+    background-position: center center;
+    background-size:cover;
+    color:white;
+    padding:0vw 5vw;
+    position:relative;
+    box-shadow: 5px 5px 10px rgb(68, 67, 67);
+    z-index: 100;
+  
+}
+#about::before {
+    content:"";
+    height:100%;
+    width:100%;
+    position:absolute;  
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .7;
+    z-index:-1;
+} 
+
+.show{
+    width:30vw;
+    height:30vw;
+    background:url(./img/abtback.jpg);
+    margin: 0vw 5vw;
+    border:3px solid white;
+    border-radius:1vw;
+    position:sticky;
+   
+}
+
+
+.details >h1{
+    font-family: 'Fredoka One', cursive;
+    font-size:3vw;
+
+
+}
+
+.details > p{
+
+    font-family:'Courier New', Courier, monospace;
+    font-size:2vw;
+
+    width:40vw;
+}
+
+#contact{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+    padding:5vw;
+    background:url(./img/back5.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:white;
+
+}
+.newsletter{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    height:60vh;
+    width:30vw;
+    background:rgba(0, 255, 255, 0.158);
+    margin:0vw 10vw;
+    box-shadow: 5px 5px 7px rgba(92, 92, 92, 0.438);
+    
+    
+}
+.thead{
+    font-size:3vw;
+    font-family: 'Fredoka One', cursive;
+    color:white;
+
+}
+
+input:focus::placeholder{
+    color:transparent
+}
+
+input{
+    width:80%;
+    height:10%;
+    text-align:center;
+    margin:2vh;
+    background-color: rgb(255, 0, 0);
+    border-radius:5px;
+    font-size: 1.5vw;
+    font-family:'Courier New', Courier, monospace;
+    border:none;
+    color:white;
+    outline:none;
+    transform:translateX(0vw);
+    transition:1s;
+}
+.submit{
+    width:80%;
+    height:8%;
+    text-align:center;
+    margin:2vh;
+    background:rgba(2, 244, 252, 0.884);
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+    font-size:2vw;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(7, 7, 7);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cond > h1{
+    font-family: 'Fredoka One', cursive;
+    font-size:5vw;
+
+
+}
+.cond >p{
+    font-family:'Courier New', Courier, monospace;
+    width:40vw;
+    font-size:3vh;
+}
+
+input:focus{
+    transform:translateX(1vw);
+    transition:1s;
+    background-color:white;
+    color:black;
+}
+
+.footer{
+    display:flex;
+    flex-direction:column;
+    height:30vh;
+    width:100vw;
+    justify-content:center;
+    align-items:center;
+    background:rgb(255, 255, 255);
+}
+
+.con{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+}
+
+.map{
+    
+    border:3px solid black;
+
+}
+
+.footer h1{
+    font-size:2vw;
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+.contact > p{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1vw;
+    color:black;
+}
+
+.footer a{
+    text-decoration:none;
+    color:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1vw;
+}
+
+.location > p{
+    width:10vw;
+    padding-top: 20px;
+}
+
+.cp > h2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1vw;
+    
+}
